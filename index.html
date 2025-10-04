@@ -46,7 +46,9 @@
                                 <p>Current Cash balance:</p>
                                 <input id="CashBalance" type="number" value="1000">
                             </div>
-                            <button onclick="SetBalances()">Change</button>
+                            <button class="SetMoney" onclick="SetBalances()">
+                                <span class="SetMoney_top">Change</span>
+                            </button>
                         </div>
                     </div>
                     <div class="SubBox">
@@ -58,7 +60,7 @@
                                 <option value="Withdraw">Withdraw</option>
                             </select>
                             <input id="UpdateAcc" class="BalanceInput" type="number" value="0">
-                            <button onclick="UpdateAccountBalance()">Proceed</button>
+                            <button class="ChangeMoney" onclick="UpdateAccountBalance()">Proceed</button>
                         </div>
                     </div>
 			    </div>
@@ -80,7 +82,7 @@
                                 <option value="USD">USD</option>
                                 <option value="THB">THB</option>
                             </select>
-                            <button onclick="ConvertCurrency()">Convert</button>
+                            <button class="CurrencyConversion" onclick="ConvertCurrency()">Convert</button>
                         </div>
                     </div>
                 </div>

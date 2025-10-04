@@ -1,5 +1,11 @@
+@font-face {
+    font-family: "Mojangles";
+    src: url(mojangles.ttf);
+}
+
 body {
     margin: 0;
+    background-color: yellow;
 }
 
 nav {
@@ -7,13 +13,39 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
-    background-color: #1665E5;
+    background-color: #18ff3a;
     color: white;
 }
 
 p {
     margin: 0;
+    font-family:"Mojangles";
 }
+h2 {
+    font-family:"Mojangles";
+}
+h3 {
+    font-family:"Mojangles";
+}
+h4 {
+    font-family: "Mojangles";
+}
+input {
+    font-family:"Mojangles";
+    width: 100px;
+}
+button {
+    font-family: "Mojangles";
+    margin-top: 10px;
+}
+select {
+    font-family:"Mojangles";
+}
+textarea {
+    font-family: "Mojangles";
+    background-color: dodgerblue;
+}
+
 
 #my-title {
     color: rebeccapurple;
@@ -70,4 +102,22 @@ p {
     width: 100px;
     height: 100px;
     margin-right: 10px;
+}
+
+/* From Uiverse.io by Mhyar-nsi */ 
+button {
+  background-color: #f3f7fe;
+  color: #3b82f6;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
 }
