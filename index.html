@@ -9,19 +9,83 @@
     <body>
         <nav>
             <p>68070294</p>
-            <h2>ITF Website</h2>
+            <h2>ITF Bank</h2>
             <p>Week 14</p>
         </nav>
         <div class="container">
             <h2 id="my-title">Welcome to my ITF Website!</h2>
-            <img src="Cool.png" width="96" alt="Cool" />
-			<hr>
-			<div>
-				<label for="my_input">Enter any number:</label>
-				<input type="number" id="my_input" value="1">
-				<button type="button" onclick="calc(this.innerText)">+1</button>
-				<button type="button" onclick="calc(this.innerText)">-1</button>
-			</div>
+            <div class="Title">
+                <img class="MeImage" src="Cool.png" width="96" alt="Cool" />
+                <div>
+                    <h2>ITF simple bank</h2>
+                    <h4>Welcome to my first HTML + CSS + JS website</h4>
+                </div>
+            </div>
+            <hr>
+			<textarea id="Log" class="UserActionText" readonly rows="10"></textarea>
+			<div class="MainBox">
+                <div class="SecondBox">
+                    <h2>Account Overview</h2>
+                    <div class="SubBox">
+                        <img class="Icon" src="user.png">
+                        <div class="InfoBox">
+                            <h3 class="TopicName">Account Information</h3>
+                            <p>Name :Pontagon Jaroonrat</p>
+                            <p>Type :Saving account</p>
+                        </div>
+                    </div>
+                    <div class="SubBox">
+                        <img class="Icon" src="briefcase.png">
+                        <div class="InfoBox">
+                            <h3 class="TopicName">Balance Informationn</h3>
+                            <div class="TextInput">
+                                <p>Current account balance:</p>
+                                <input id="AccountBalance" class="BalanceInput" type="number" value="1000">
+                            </div>
+                            <div class="TextInput">
+                                <p>Current Cash balance:</p>
+                                <input id="CashBalance" type="number" value="1000">
+                            </div>
+                            <button onclick="SetBalances()">Change</button>
+                        </div>
+                    </div>
+                    <div class="SubBox">
+                        <img class="Icon" src="toolbox.png">
+                        <div class="InfoBox">
+                            <h3 class="TopicName">Bank Operation</h3>
+                            <select id="BankOperation">
+                                <option value="Deposit">Deposit</option>
+                                <option value="Withdraw">Withdraw</option>
+                            </select>
+                            <input id="UpdateAcc" class="BalanceInput" type="number" value="0">
+                            <button onclick="UpdateAccountBalance()">Proceed</button>
+                        </div>
+                    </div>
+			    </div>
+                <div class="SecondBox">
+                    <h2>Finnancial Tools</h2>
+                    <div class="SubBox">
+                        <img class="Icon" src="coins.png">
+                        <div class="InfoBox">
+                            <h3 class="TopicName">Currency Converter</h3>
+                            <div class="TextInput">
+                                <p>Input Balance:</p>
+                                <input id="CurrencyIn" class="BalanceInput" type="number" value="0">
+                            </div>
+                            <div class="TextInput">
+                                <p>Output Balance:</p>
+                                <input id="CurrencyOut" class="BalanceInput" type="number" value="0">
+                            </div>
+                            <select id="TransferToCurrency">
+                                <option value="USD">USD</option>
+                                <option value="THB">THB</option>
+                            </select>
+                            <button onclick="ConvertCurrency()">Convert</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </body>
 	<script src="script.js"></script>
